@@ -87,13 +87,12 @@ function addFreelancer() {
 
 function getAverage(){
     let averagePrice = 0
+    let total = 0
     let averagePriceEl = document.querySelector("#averagePrice");
     freelancerArr.forEach((price) => {
-       averagePrice += price.price /freelancerArr.length;
-       console.log('price' , price.price)
-       console.log('average price', averagePrice)
+       total += price.price 
+       averagePrice = total / freelancerArr.length
         return averagePrice
     })
-    averagePriceEl.innerHTML = averagePrice;
-    console.log(averagePrice)
+    averagePriceEl.innerHTML = Math.floor(averagePrice);
 }
