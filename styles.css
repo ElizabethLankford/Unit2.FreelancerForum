@@ -1,0 +1,11 @@
+.main-container{
+    text-align: center;
+}
+.sub-container{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    text-align: left;
+    list-style-type: none;
+}
